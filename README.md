@@ -25,10 +25,10 @@ O projeto permite realizar o cálculo de fluxo de potência e coletar informaç�
 
 ## Atenção para o correto preenchimento dos seguintes parãmetros
 
-## Parâmetro Caminho do arquivo DSS que contém todos os elementos dos alimentador a ser estudado ##
+### Parâmetro Caminho do arquivo DSS que contém todos os elementos dos alimentador a ser estudado
 dss_file = pathlib.Path(r"D:\Projetos_Python\Sobrecarga\2_TAP2_1_REG_Aumento\01_REG_CTG_Carg_Leve.dss")
 
-## Parâmetros necessários para fluxo de potência ##
+### Parâmetros necessários para fluxo de potência 
 loadmult=float(1.00)
 param_mode=str("daily")
 param_step_size=float(1)
@@ -40,7 +40,7 @@ param_maxcontroliter=int(500)
 
 Caso desejar colocar alguma geração distribuida e/ou carga adicional e/ou até mesmo demais elementos adicionar nos arquivos DSS antes de rodar este script
 
-## Tecnologias utilizadas
+### Tecnologias utilizadas
 
 * **Python 3.13**
 * **OpenDSS**
@@ -63,6 +63,14 @@ O projeto pode ser utilizado como base para estudos relacionados a:
 * Inversão de fluxo;
 * Avaliação das condições operativas dos equipamentos;
 * Processamento e análise de resultados de simulações elétricas.
+
+## Comandos gerais úteis para seu venv no VScode
+Antes de criar o ambiente, vale conferir se essa é realmente a pasta onde está seu master.py. No VS Code, execute: dir
+Se aparecer master.py, podemos criar o ambiente aí mesmo: py -3.13 -m venv .venv
+Ativando ambiente No PowerShell do VS Code: .\.venv\Scripts\Activate.ps1
+Atualizando pip: python -m pip install --upgrade pip
+pip install py-dss-interface pandas
+pip list
 
 ## Status do projeto
 
